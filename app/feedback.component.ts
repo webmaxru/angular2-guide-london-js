@@ -10,7 +10,7 @@ export class FeedbackComponent {
         email: 'salnikov@gmail.com'
     };
 
-    onSubmitTemplateDrivenForm(value) {
+    onSubmitTemplateDrivenForm(value: any) {
         console.log('Template-driven form submitted:');
         console.log(value);
     }

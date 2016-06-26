@@ -12,10 +12,12 @@ export class ContactComponent {
         email: 'salnikov@gmail.com'
     };
 
+    modelDrivenForm: FormGroup;
+
     constructor(formBuilder: FormBuilder) {
 
         this.modelDrivenForm = new FormGroup({
-            email: new FormControl(this.feedbackObject.email),
+            email: new FormControl(),
             message: new FormControl("", Validators.required)
         });
 

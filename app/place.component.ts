@@ -10,14 +10,16 @@ import {NgClass} from '@angular/common';
   .visited {
     text-decoration: line-through;
   }
-  `]
+  `],
+  inputs: ['name'],
+  outputs: ['visit']
 })
 export class PlaceComponent {
 
     isVisited: boolean = false;
 
-    @Input() name: string;
-    @Output() visit: EventEmitter<any> = new EventEmitter();
+    public name: string;
+    public visit: EventEmitter<any> = new EventEmitter();
 
     doVisit(placeName: string) {
         this.isVisited = !this.isVisited;
