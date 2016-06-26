@@ -10,7 +10,7 @@ export class GuideComponent {
     city: string;
 
     constructor() {
-        this.city = 'Krakow'
+        this.city = 'London'
     }
 
 }
